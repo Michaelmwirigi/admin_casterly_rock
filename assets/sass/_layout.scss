@@ -1,0 +1,251 @@
+body{
+  font-size: 16px;
+}
+///////////////////////////admin page/////////////////////////////////////////////////
+#sidebar{
+  width:11rem;
+  display: inline-flex;
+  #icon_tabs{
+    margin: 0;
+    background: #eaeaea;
+    height: 100%;
+    width: 100%;
+    float: left;
+    border:none;
+    display: inline-block;
+    .item{
+      padding: 1em;
+     // color: #7a418f;
+
+      .label{
+        top: 0.3em;
+        left: 68%;
+        background-color: #7a418f;
+      }
+      i{
+        //color: #b33679;
+      }
+      img{
+        margin: 0 auto;
+      }
+    }
+    .item.logout{
+      position: fixed;
+      width: 100%;
+      bottom: 1rem;
+    }
+    .item.icon_logo{
+      padding: 1rem 0;
+    }
+    .btn_item{
+      padding: 0.45rem;
+      .ui.button{
+        margin: 0;
+        color: #ffffff;
+        background-color: #b33679;
+        padding: 0.56rem;
+        font-size: 0.75em;
+      }
+    }
+  }
+
+}
+
+.right_content{
+  left: 11rem;//used when account sidebar is visible
+  position: relative;
+  height: 100%;
+  margin: 0 !important;
+
+  .column2{
+    width: calc(100% - 11rem);//used when account sidebar is visible
+    height: 100%;
+    padding: 0 ;
+    border-right : 1px solid #ddd;
+    margin: 0;
+    background: #ffffff;
+    display: inline-block;
+    position: relative;
+
+     .dashboard_menu{
+      background: #eaeaea;
+      height: 55px;
+      .search.item{
+        width: 25%;
+        input{
+          width: 100%;
+        }
+      }
+      .item:hover{
+        background: inherit;
+        i{
+          color: #b33679;
+        }
+      }
+      .setting_popup_content{
+        border-radius: 10px;
+        .ui.list{
+          padding: 0.65rem;
+          width: 10rem;
+          .item{
+            font-size: 0.875em;
+            color: #000000;
+          }
+        }
+      }
+      .ui.input{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        input{
+          //width: 100%;
+          height: 2rem;
+          border-radius: 10rem;
+        }
+      }
+    }
+
+    .contacts_top{
+      margin: 0;
+      padding: 1rem;
+      background-color: #cccccc;
+      vertical-align: middle;
+      .contact_list{
+        text-align: center;
+      }
+    }
+    .contacts_content_products{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      overflow-y: auto;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+     .item.list_top{
+        font-weight: bold;
+      }
+
+      
+
+      .all_contacts{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        height: calc(100% - 55px);
+        padding: 0;
+        overflow-x: auto;
+        //margin-top: 43px;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .contact_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+        }
+        .p_image{
+          width: 10%;
+
+        }
+        .p_name{
+          width: 10%;
+        }
+        .p_quantity{
+          width: 10%;
+        }
+        .p_desc{
+          width: 30%;
+        }
+        .p_status{
+          width: 10%;
+        }
+        .p_price{
+          width: 10%;
+        }
+        .p_save{
+          width: 10%;
+          text-align: center;
+        }
+        .p_delete{
+          width: 10%;
+          text-align: center;
+        }
+      }
+      .contact_list_customers{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+        }
+        
+        .c_name{
+          width: 20%;
+        }
+        .c_email{
+          width: 20%;
+        }
+        .c_tel{
+          width: 30%;
+        }
+        
+      }
+    }
+
+     .contacts_content_customers{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      overflow-y: auto;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+     .item.list_top{
+        font-weight: bold;
+      }
+
+      
+
+      .all_contacts{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        height: calc(100% - 55px);
+        padding: 0;
+        overflow-x: auto;
+        //margin-top: 43px;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .contact_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+        }
+        .c_name{
+          width: 20%;
+        }
+        .c_email{
+          width: 20%;
+        }
+        .c_tel{
+          width: 30%;
+        }
+        
+      }
+    }
+  }
+}
